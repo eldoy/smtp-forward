@@ -1,7 +1,7 @@
 {
   "name": "smtp-forward",
   "version": "0.1.0",
-  "description": "Forward email to web service",
+  "description": "Receive and forward emails to web service",
   "scripts": {
     "test": "nodemon spec/index.js"
   },

@@ -1,6 +1,6 @@
-# 5ono SMTP
+# SMTP Forward
 
-Forward email to web service.
+Receive and forward emails to web service.
 
 ### Install
 
