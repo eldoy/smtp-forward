@@ -2,11 +2,21 @@
 
 Forward email to web service.
 
+### Install
+
+```
+npm i smtp-forward
+```
+
 ### Usage
 
-Start server with `npm run dev`.
+```js
+const forward = require('smtp-forward')
 
-Install swaks with `brew install swaks` if you don't have it.
+forward({ port: 2525, onMail: async function(mail) {
+  // Do something with mail
+  console.log(mail)
+}})
+```
 
-Send test email with:
-`swaks -h domain.com -f vidar@eldoy.com -t vidar@cmprsd.test -s localhost -p 2525 -b "What is going on?"`
+MIT Licensed. Enjoy!
