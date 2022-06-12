@@ -1,0 +1,32 @@
+{
+  "name": "smtp-forward",
+  "version": "0.1.0",
+  "description": "Forward email to web service",
+  "scripts": {
+    "test": "nodemon spec/index.js",
+    "update": "waveorb update",
+    "deploy": "waveorb deploy",
+    "serve:test": "nodemon -e js,mjs,json,yml,css,md -i dist server.js",
+    "log": "npm run log:app",
+    "log:app": "ssh -t root@95.179.153.171 'tail -f /root/apps/smtp-forward/log/app.log'",
+    "log:err": "ssh -t root@95.179.153.171 'tail -f /root/apps/smtp-forward/log/err.log'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eldoy/smtp-forward"
+  },
+  "author": "Vidar Eldøy <vidar@eldoy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dugg": "^0.1.11",
+    "extras": "^0.10.6",
+    "mailparser": "^3.5.0",
+    "mailutil": "^0.1.0",
+    "smtp-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "fport": "^0.3.0",
+    "mxmail": "^0.5.8",
+    "spekky": "^0.1.3"
+  }
+}
