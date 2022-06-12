@@ -3,13 +3,7 @@
   "version": "0.1.0",
   "description": "Forward email to web service",
   "scripts": {
-    "test": "nodemon spec/index.js",
-    "update": "waveorb update",
-    "deploy": "waveorb deploy",
-    "serve:test": "nodemon -e js,mjs,json,yml,css,md -i dist server.js",
-    "log": "npm run log:app",
-    "log:app": "ssh -t root@95.179.153.171 'tail -f /root/apps/smtp-forward/log/app.log'",
-    "log:err": "ssh -t root@95.179.153.171 'tail -f /root/apps/smtp-forward/log/err.log'"
+    "test": "nodemon spec/index.js"
   },
   "repository": {
     "type": "git",
